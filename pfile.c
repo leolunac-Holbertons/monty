@@ -55,15 +55,16 @@ void pfile(FILE *file)
 * @line: number of line
 * @f: file
 * Description:  return 1 if is, 0 if not
+:wq
 * Return: int
 */
 void get_opcode_func(char *opcode, stack_t **stack, unsigned int line, FILE *f)
 {
 	int i = 0;
 	instruction_t opcodes[] = {{"pall", pall},
-				   {"pint", pint}, {"pop", pop},
-				   {"swap", swap}, {"add", add},
-				   {NULL, NULL}};
+				{"pint", pint}, {"pop", pop},
+				{"swap", swap}, {"add", add},
+				{"nop", nop`},  {NULL, NULL}};
 
 	/*(void)stack;*/
 	/*(void)line;*/
