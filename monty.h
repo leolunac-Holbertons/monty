@@ -1,5 +1,5 @@
-#ifndef STACKS_QUEUES
-#define STACKS_QUEUES
+#ifndef _FILE_H_
+#define _FILE_H_
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -49,4 +49,6 @@ void free_stack(stack_t **head);
 void get_opcode_func(char *opcde, stack_t **stack, unsigned int line, FILE *f);
 void pfile(FILE *file);
 bool valid_arg(char *arg);
-#endif
+
+#endif /*_FILE_H_*/
+
