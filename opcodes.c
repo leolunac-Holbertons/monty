@@ -59,11 +59,11 @@ void pall(stack_t **stack, unsigned int line)
 }
 
 /**
- * pint - prints the value at the top of stack
- * @stack: pointer to the head node pointer of stack
- * @line: the line number
- * Return: Nothing.
- */
+* pint - prints the value at the top of stack
+* @stack: pointer to the head node pointer of stack
+* @line: the line number
+* Return: Nothing.
+*/
 void pint(stack_t **stack, unsigned int line)
 {
 /*printf("haciendo pint:%d\n", line);*/
