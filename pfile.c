@@ -55,7 +55,6 @@ void pfile(FILE *file)
 * @line: number of line
 * @f: file
 * Description:  return 1 if is, 0 if not
-:wq
 * Return: int
 */
 void get_opcode_func(char *opcode, stack_t **stack, unsigned int line, FILE *f)
