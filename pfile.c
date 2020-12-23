@@ -1,9 +1,9 @@
 #include "monty.h"
 /**
- * processfile - Read file line by line
- * @file: file to read
- * Description:  no return
- */
+* pfile - Read file line by line
+* @file: file to read
+* Description:  no return
+*/
 void pfile(FILE *file)
 {
 
@@ -49,14 +49,14 @@ void pfile(FILE *file)
 }
 
 /**
- * get_opcode_func - process each command
- * @opcode: code to execute
- * @stack: structure to use
- * @line: number of line
- * @f: file
- * Description:  return 1 if is, 0 if not
- * Return: int
- */
+* get_opcode_func - process each command
+* @opcode: code to execute
+* @stack: structure to use
+* @line: number of line
+* @f: file
+* Description:  return 1 if is, 0 if not
+* Return: int
+*/
 void get_opcode_func(char *opcode, stack_t **stack, unsigned int line, FILE *f)
 {
 	int i = 0;
@@ -87,11 +87,11 @@ void get_opcode_func(char *opcode, stack_t **stack, unsigned int line, FILE *f)
 }
 
 /**
- * valid_arg - valid push arguments
- * @arg: push argument
- * Description:  return 1 if is, 0 if not
- * Return: bool
- */
+* valid_arg - valid push arguments
+* @arg: push argument
+* Description:  return 1 if is, 0 if not
+* Return: bool
+*/
 bool valid_arg(char *arg)
 {
 	int i = 0;
@@ -108,11 +108,11 @@ bool valid_arg(char *arg)
 }
 
 /**
- * free_stack - frees a list.
- * @head: head of list
- * Description: free list
- * Return: Nothing
- */
+* free_stack - frees a list.
+* @head: head of list
+* Description: free list
+* Return: Nothing
+*/
 void free_stack(stack_t **head)
 {
 
