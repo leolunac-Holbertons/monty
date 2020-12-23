@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
-* main - Entry point
-* @argc: num arguments
-* @argv: array with argumente
-* Description:  return success
-* Return: int
-*/
+ * main - Entry point
+ * @argc: num arguments
+ * @argv: array with argumente
+ * Description:  return success
+ * Return: int
+ */
 int main(int argc, char *argv[])
 {
 	FILE *file;
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
-	pfile(file);
+	fileprocess(file);
 	fclose(file);
 	return (EXIT_SUCCESS);
 }
