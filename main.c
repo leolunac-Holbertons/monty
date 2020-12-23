@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * main - Entry point
- * @argc: num arguments
- * @argv: array with argumente
- * Description:  return success
- * Return: int
- */
+* main - Entry point
+* @argc: num arguments
+* @argv: array with argumente
+* Description:  return success
+* Return: int
+*/
 int main(int argc, char *argv[])
 {
 	FILE *file;
