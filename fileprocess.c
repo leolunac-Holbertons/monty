@@ -1,9 +1,9 @@
 #include "monty.h"
 /**
- * fileprocess - Read file line by line
- * @file: file to read
- * Description:  no return
- */
+* fileprocess - Read file line by line
+* @file: file to read
+* Description:  no return
+*/
 void fileprocess(FILE *file)
 {
 
@@ -49,23 +49,21 @@ void fileprocess(FILE *file)
 }
 
 /**
- * get_opcode_func - process each command
- * @opcode: code to execute
- * @stack: structure to use
- * @line: number of line
- * @f: file
- * Description:  return 1 if is, 0 if not
- * Return: int
- */
+* get_opcode_func - process each command
+* @opcode: code to execute
+* @stack: structure to use
+* @line: number of line
+* @f: file
+* Description:  return 1 if is, 0 if not
+* Return: int
+*/
 void get_opcode_func(char *opcode, stack_t **stack, unsigned int line, FILE *f)
 {
 	int i = 0;
 	instruction_t opcodes[] = {{"pall", pall},
 				   {"pint", pint}, {"pop", pop},
 				   {"swap", swap}, {"add", add},
-				   {"nop", nop}, {"sub", subop},
-				   {"mul", mulop}, {"div", divop},
-				   {"mod", modop}, {NULL, NULL}};
+				   {"nop", nop}, {NULL, NULL}};
 
 	/*(void)stack;*/
 	/*(void)line;*/
@@ -89,11 +87,11 @@ void get_opcode_func(char *opcode, stack_t **stack, unsigned int line, FILE *f)
 }
 
 /**
- * valid_arg - valid push arguments
- * @arg: push argument
- * Description:  return 1 if is, 0 if not
- * Return: bool
- */
+* valid_arg - valid push arguments
+* @arg: push argument
+* Description:  return 1 if is, 0 if not
+* Return: bool
+*/
 bool valid_arg(char *arg)
 {
 	int i = 0;
@@ -110,11 +108,11 @@ bool valid_arg(char *arg)
 }
 
 /**
- * free_stack - frees a list.
- * @head: head of list
- * Description: free list
- * Return: Nothing
- */
+* free_stack - frees a list.
+* @head: head of list
+* Description: free list
+* Return: Nothing
+*/
 void free_stack(stack_t **head)
 {
 
