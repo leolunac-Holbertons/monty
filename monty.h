@@ -44,11 +44,6 @@ void pop(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
-void subop(stack_t **stack, unsigned int line_number);
-void divop(stack_t **stack, unsigned int line_number);
-void mulop(stack_t **stack, unsigned int line_number);
-void modop(stack_t **stack, unsigned int line_number);
-
 void free_stack(stack_t **head);
 void get_opcode_func(char *opcde, stack_t **stack, unsigned int line, FILE *f);
 void fileprocess(FILE *file);
